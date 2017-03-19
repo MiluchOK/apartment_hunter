@@ -384,7 +384,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <%= form_for :application, html: {class: 'contactForm', role: 'form'} do |f| %>
+          <%= form_for :order, url: orders_new_path, html: {class: 'contactForm', role: 'form'} do |f| %>
 
               <div class="form-group">
                 <%= f.text_field :name,
