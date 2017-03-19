@@ -1,2 +1,18 @@
-<h1>Orders#new</h1>
-<p>Find me in app/views/orders/new.html.erb</p>
+
+<div class="container">
+  <div id="success_container">
+    <figure class="logo animated fadeInDown delay-07s">
+      <!--<a href="#">-->
+        <%= image_tag("success.png") %>
+      <!--</a>-->
+    </figure>
+    <h1 class="animated fadeInDown delay-07s">All set!</h1>
+    <ul class="we-create animated fadeInUp delay-1s">
+      <li>Now just relax and wait for our agent to contact you.</li>
+    </ul>
+    <%= link_to 'Done!', static_pages_landing_path, class: 'link animated fadeInUp delay-1s servicelink' %>
+  </div>
+</div>
+
+
+<!--success.png-->
