@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  post 'orders/new'
+  post 'orders/create'
 
   post 'orders/update'
 
