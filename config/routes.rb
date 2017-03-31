@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   post 'orders/create'
 
   post 'orders/update'
 
   get 'orders/delete'
+
+  get 'orders/show'
 
   get '/orders/new'
 
