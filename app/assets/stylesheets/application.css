@@ -18,5 +18,6 @@
  *= require responsive
  *= require static_pages
  *= require style
+ *= require imported
  *= require_self
  */
