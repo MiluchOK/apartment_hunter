@@ -1,3 +1,24 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+section#team li{
+  list-style:none;
+  display: list-item;
+}
+
+section#team ul{
+  padding-left: 0px;
+  text-align:left;
+}
+
+
+section#team div.plan-header{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+section#team .price-tag{
+  padding-top: 10px;
+  font-size: xx-large;
+}
