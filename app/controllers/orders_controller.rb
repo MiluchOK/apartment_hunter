@@ -1,4 +1,7 @@
 class OrdersController < ApplicationController
+
+  include OrdersHelper
+
   def new
 
   end
@@ -7,6 +10,7 @@ class OrdersController < ApplicationController
     @person = Order.new(order_params)
     if @person.valid?
       @person.save!
+      new_order_notification(@person)
       redirect_to action: 'new'
     else
       raise 'Cannot create the order!'
