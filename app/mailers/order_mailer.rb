@@ -1,6 +1,6 @@
 class OrderMailer < ApplicationMailer
-  def sample_email
-    mail(to: 'milyukov.alexey@gmail.com', subject: 'Sample Email')
-    # mail(to: 'phycomycetes@gmail.com', subject: 'Sample Email')
+  def new_order_email(order)
+    @order = order
+    mail(to: "#{@order.email}", subject: 'Apartment Hunter application')
   end
 end
