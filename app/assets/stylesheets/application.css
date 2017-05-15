@@ -17,7 +17,8 @@
  *= require orders
  *= require responsive
  *= require static_pages
+ *= require pricing
  *= require style
- *= require imported
+ *= require font-awesome
  *= require_self
  */
