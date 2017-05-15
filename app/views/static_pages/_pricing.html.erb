@@ -1,38 +1,15 @@
+
 <div class="row">
-  <div class="card-wrapper col-md-6 wow fadeInLeft animated">
-    <div class="pricing card card-5">
-      <div class="w-box popular">
-        <div class="plan-header text-center">
-          <div class="popular-tag">Help finding apartments</div>
-          <h2 class="plan-title"></h2>
-          <h3 class="price-tag">80$</h3>
-          <!-- <small>Get Started - free forever!</small> -->
-        </div>
-        <ul>
-          <li><i class="fa fa-rocket"></i> meet our agent face-to-face to discuss your housing needs</li>
-          <li><i class="fa fa-tasks"></i> we build a list of apartments that suit you according to your preferences</li>
-          <li><i class="fa fa-rocket"></i> 3 apartment viewings scheduled for you with our in-person assistance</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <%= react_component("Pricing", {title: "Helping finding apartments", price: 80, bulletPoints: [
+      'meet our agent face-to-face to discuss your housing needs',
+      'we build a list of apartments that suit you according to your preferences',
+      '3 apartment viewings scheduled for you with our in-person assistance'
+  ]}) %>
 
-  <div class="card-wrapper col-md-6 wow fadeInRight animated">
-    <div class="pricing card card-5">
-      <div class="w-box popular">
-        <div class="plan-header text-center">
-          <div class="popular-tag">Help finding apartments and roommates</div>
-          <h2 class="plan-title"></h2>
-          <h3 class="price-tag">150$</h3>
-          <!-- <small>Get Started - free forever!</small> -->
-        </div>
-        <ul>
-          <li><i class="fa fa-rocket"></i> meet our agent face-to-face to discuss your housing needs </li>
-          <li><i class="fa fa-tasks"></i> we build a list of apartments that suit you according to your preferences</li>
-          <li><i class="fa fa-rocket"></i> 5 apartment viewings scheduled for you with our in-person assistance</li>
-          <li><i class="fa fa-rocket"></i> we pick potential roommates for you and schedule a meeting with them.</li>
-      </div>
-    </div>
-  </div>
-
+  <%= react_component("Pricing", {title: "Helping finding apartments and roommates", price: 150, bulletPoints: [
+      'meet our agent face-to-face to discuss your housing needs',
+      'we build a list of apartments that suit you according to your preferences',
+      '5 apartment viewings scheduled for you with our in-person assistance',
+      'we pick potential roommates for you and schedule a meeting with them'
+  ]}) %>
 </div>

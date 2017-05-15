@@ -40,6 +40,12 @@ gem 'jbuilder', '~> 2.5'
 #Slack notifications
 gem 'slack-notifier'
 
+#React integration
+gem 'react-rails'
+
+#font awsome
+gem 'font-awesome-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
